@@ -43,7 +43,7 @@ export default function AboutPage() {
                 aspect of business and daily life, driving progress and solving
                 complex challenges. XIXI TECH aims to be at the forefront of
                 this transformation, continuously pushing the boundaries of
-                what's possible in AI and hardware integration.
+                whats possible in AI and hardware integration.
               </p>
             </motion.section>
             <motion.section

@@ -43,8 +43,8 @@ export default function ContactPage() {
             >
               <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
               <p className="text-gray-300 mb-6">
-                We'd love to hear from you. Please fill out the form below or
-                use our contact information to reach us.
+                We would love to hear from you. Please fill out the form below
+                or use our contact information to reach us.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
