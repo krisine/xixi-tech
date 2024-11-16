@@ -83,6 +83,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+  <>
     <motion.header
       className="bg-gray-800 text-white py-4"
       initial={{ opacity: 0, y: -50 }}
@@ -157,51 +158,55 @@ export default function Header() {
         </nav>
       </div>
 
-      {/* Mobile Dropdown Menu */}
-      {isMenuOpen && (
-        <motion.div
-          className="lg:hidden bg-gray-700"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <ul className="flex flex-col space-y-2 p-4">
-            <li>
-              <Link href="/about" className="hover:text-blue-300 transition-colors">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/faq" className="hover:text-blue-300 transition-colors">
-                F&Q
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-blue-300 transition-colors">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/legal" className="hover:text-blue-300 transition-colors">
-                Legal
-              </Link>
-            </li>
-            <li>
-              <Link href="/news" className="hover:text-blue-300 transition-colors">
-                News
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/market-analysis"
-                className="hover:text-blue-300 transition-colors"
-              >
-                Market Analysis
-              </Link>
-            </li>
-          </ul>
-        </motion.div>
-      )}
-    </motion.header>
+        </motion.header>
+
+      <div className="absolute" style={{right: 10, zIndex:100}}>
+        {/* Mobile Dropdown Menu */}
+        {isMenuOpen && (
+          <motion.div
+            className="lg:hidden bg-gray-700"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ul className="flex flex-col space-y-2 p-4">
+              <li>
+                <Link href="/about" className="hover:text-blue-300 transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="hover:text-blue-300 transition-colors">
+                  F&Q
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-blue-300 transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal" className="hover:text-blue-300 transition-colors">
+                  Legal
+                </Link>
+              </li>
+              <li>
+                <Link href="/news" className="hover:text-blue-300 transition-colors">
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/market-analysis"
+                  className="hover:text-blue-300 transition-colors"
+                >
+                  Market Analysis
+                </Link>
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </div>
+    </>
   );
 }
