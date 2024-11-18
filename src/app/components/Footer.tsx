@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
-            <p className="text-gray-400">Email: info@xixitech.com</p>
+            <p className="text-gray-400">Email: xi@xixitech.io</p>
             <p className="text-gray-400">Phone: +1 (555) 123-4567</p>
           </div>
           <div className="w-full md:w-1/3">

@@ -15,7 +15,7 @@ export default function ContactPage() {
     const message = messageRef.current;
 
     // 构造 mailto 链接
-    const mailtoLink = `mailto:info@xixitech.com?subject=Contact from ${encodeURIComponent(
+    const mailtoLink = `mailto:xi@xixitech.io?subject=Contact from ${encodeURIComponent(
       name
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
@@ -50,7 +50,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 mr-2 text-blue-400" />
-                  <span>info@xixitech.com</span>
+                  <span>xi@xixitech.io</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-6 w-6 mr-2 text-blue-400" />
